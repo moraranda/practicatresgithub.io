@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <title>Ejercicio Cuatro</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+        <style>
+            body{
+                font-family: 'Arial', sans-serif;
+                margin-top: 10px;
+                padding: 0px;
+                display: flex;
+                justify-content: center;}
+
+            .div{
+                text-align: center;
+                display: flex;
+                justify-content: center;}
+
+            .card-header{
+                background-color: #6B95BF;
+                color: #fff;}
+
+            a{
+                text-decoration: none;
+                color: white;}
+
+            button{
+                color: #6B95BF;
+                width: 50%;
+                cursor: pointer;
+                height: 44px;
+                border: 0;
+                margin-bottom: 5px;
+                border:1px solid #6B95BF;
+                border-radius: 8px;
+                position: relative;}
+
+            button:hover{
+                background: #4278AD;
+                color: #fff;}
+
+            .form{
+                margin-top: 15px;
+                border:1px solid black;
+                border-radius: 8px;}
+
+            .info{
+                width: 900px;
+                padding: 20px;}
+        </style>
+    </head>
+
+    <body>
+        <main>
+            <div class="div">
+                <div class="card border-primary" style="max-width: 29rem;">
+                    <div class="card-header"><a href="../index.html">EJERCICIO CUATRO</a></div>
+                    <div class="card-body">
+                        <p class="card-text">Escribe un programa que presente el siguiente formulario.</p>
+                        <button onclick="abrirVentana()">Probar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="form">
+                <h6 style="margin-top: -10px; margin-left: 7px;"><mark style="background-color: white;">Rellenar la Siguiente Información para su Matrícula</mark></h6>
+                <div class="info">
+                    <!-- Caja de Texto -->
+                    <textarea name="opinion" id="opinion" cols="50" rows="5" placeholder="Escriba por que quiere hacer un CFGS:"></textarea><br>
+
+                    <!-- Primera pregunta y Desplegable -->
+                    <label><p>¿Con qué lenguaje de programación de los siguientes tienes más experiencia?</p></label>
+                        <select>
+                            <option>Java</option>
+                            <option>PHP</option>
+                            <option>Python</option>
+                            <option>C++</option>
+                            <option>SQL</option>
+                        </select><br>
+
+                    <!-- Pregunta y Checkbox -->
+                    <label for=""><p>¿Qué CFSG quieres realizar?</p></label>
+                    <input type="checkbox" value="" id="1"><label for="1"> ASIR</label>&nbsp;
+                    <input type="checkbox" value="" id="2"><label for="2"> DAM</label>&nbsp;
+                    <input type="checkbox" value="" id="3"><label for="3"> DAW</label>&nbsp;<br>
+
+                    <!-- Seleccionar Fecha -->
+                    <label><p>Seleccione una fecha para hacer CFGS:</p></label>
+                    <input type="date"><br>
+
+                    <!-- Seleccionar Archivos -->
+                    <label><p>Seleccione su CV:</p></label>
+                    <input type="file"><br>
+
+                    <!-- Seleccion Multiple -->
+                    <label><p>Indique qué CFGS (varios) podría cursar por conocimientos:</p></label>
+                    <div class="form-group">
+                        <select multiple="">
+                            <option>SMIR</option>
+                            <option>ASIR</option>
+                            <option>DAM</option>
+                            <option>DAW</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script>
+
+        </script>
+        <!-- Bootstrap JavaScript Libraries -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+    </body>
+
+</html>
